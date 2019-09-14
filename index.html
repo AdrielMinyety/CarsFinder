@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: linear-gradient(to left top, #051937, #3e205b, #850464, #c5004c, #eb1212);
+            /* height: 100vh; */
+        }
+        .bg-light {
+            background: rgba(200, 200, 200, 0.9)!important;
+        }
+    </style>
+    <title>CarsFinder</title>
+</head>
+<body>
+    <div class="container-fluid px-4 pb-5">
+        <div class="bg-white shadow rounded-bottom p-1">
+            <h1 class="font-weight-bold text-center text-dark">Cars Finder</h1>
+        </div>
+
+        <div class="bg-light mt-5 p-4 rounded">
+            <h2>Filtrar inventario</h2>
+            <div class="card p-2 mx-auto shadow">
+                <form class="form-inline">
+                    <!-- <center> -->
+                        <select class="form-control mx-auto mr-1 mb-1" id="marca">
+                            <option value="">Marca</option>
+                            <option value="Audi">Audi</option>
+                            <option value="BMW">BMW</option>
+                            <option value="Mercedes Benz">Mercedes Benz</option>
+                            <option value="Chevrolet">Chevrolet</option>
+                            <option value="Ford">Ford</option>
+                            <option value="Dodge">Dodge</option>
+                        </select>
+                                               
+                       <select class="form-control mx-auto mr-1 mb-1" id="year">
+                            <option value="">Año</option>
+                        </select>
+                                              
+                        <select class="form-control mx-auto mr-1 mb-1" id="puertas">
+                            <option value="">Puertas</option>
+                            <option value="2">2</option>
+                            <option value="4">4</option>
+                        </select>
+
+                        <select class="form-control mx-auto mr-1 mb-1" id="transmision">
+                            <option value="">Transmisión</option>
+                            <option value="automatico">Automática</option>
+                            <option value="manual">Manual</option>
+                        </select>
+                                              
+                        <select class="form-control mx-auto mr-1 mb-1" id="color">
+                            <option value="">Color</option>
+                            <option value="Negro">Negro</option>
+                            <option value="Azul">Azul</option>
+                            <option value="Blanco">Blanco</option>
+                            <option value="Rojo">Rojo</option>
+                        </select>
+
+                       <select class="form-control mx-auto mr-1 mb-1" id="minimo">
+                            <option value="">Presupuesto Mínimo</option>
+                            <option value="20000">20,000</option>
+                            <option value="30000">30,000</option>
+                            <option value="40000">40,000</option>
+                            <option value="50000">50,000</option>
+                            <option value="60000">60,000</option>
+                            <option value="70000">70,000</option>
+                            <option value="80000">80,000</option>
+                            <option value="90000">90,000</option>
+                        </select>
+                       
+                       <select class="form-control mx-auto mr-1 mb-1" id="maximo">
+                            <option value="">Presupuesto Máximo</option>
+                            <option value="20000">20,000</option>
+                            <option value="30000">30,000</option>
+                            <option value="40000">40,000</option>
+                            <option value="50000">50,000</option>
+                            <option value="60000">60,000</option>
+                            <option value="70000">70,000</option>
+                            <option value="80000">80,000</option>
+                            <option value="90000">90,000</option>
+                        </select>
+                    <!-- </center> -->
+                </form>
+            </div>
+        </div>
+        <div class="bg-light mt-5 p-4 rounded">
+            <h2>Inventario</h2>
+            <div id="resultado" class="row"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
